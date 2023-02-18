@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter';
+}
+
+.title{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 360px;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table th + td { border-left:2px solid black; }
+
+.container{
+    display:grid;
+    margin:1vh 1vw 1vh 1vw;
+    width: 98vw;
+    height: 92vh;
+    border: 1px solid black;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap: 10px;
+    padding:10px;
+    overflow: hidden;
+}
+.items{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.one{
+    grid-column:1/span 2;
+    grid-row:1;
+}
+.two{
+    grid-column:1;
+    grid-row:2/span 3 ;
+}
+.three{
+    grid-column:1;
+    grid-row:5/span 3 ;
+}
+.four{
+    grid-column:1;
+    grid-row:8/span 3 ;
+}
+.five{
+    grid-column:2;
+    grid-row:2/span 9 ;
+}
